@@ -1,0 +1,71 @@
+@use './abstract/variables.scss' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $font;
+}
+
+body {
+    padding: 100px;
+
+    .card {
+        border: solid 1px black;
+        margin: 20px;
+        width: 20vw;
+        min-height: 600px;
+    
+    
+        .image-placeholder {
+            width: 100%;
+            min-height: 150px;
+
+            background-color: $placeholder-colour;
+
+            img {
+                // height: 100%;
+                width: 100%;
+            }
+        }
+
+        .info {
+            padding: 20px;
+
+            .info-title {
+                font-size: $heading-size;
+                margin-bottom: 10px;
+            }
+
+            .info-text {
+                font-size: $paragraph-size;
+                margin-bottom: 10px;
+                line-height: 150%;
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: flex-start;
+
+                .button {
+                    height: $button-height;
+                    width: $button-width;
+                    margin: 10px 0; 
+                    border: $button-colour solid 1px;
+                }
+
+                .button-main {
+                    background-color: $button-colour;
+                    color: $white;
+                }
+
+                .button-secondary {
+                    background-color: $white;
+
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
