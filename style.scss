@@ -1,4 +1,4 @@
-@use './abstract/variables.scss' as *;
+@use './abstract/_variables.scss' as *;
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
@@ -10,13 +10,13 @@
 
 body {
     padding: 100px;
+    background-color: $body-background-colour;
 
     .card {
-        border: solid 1px black;
         margin: 20px;
         width: 20vw;
         min-height: 600px;
-    
+        background-color: $background-colour;
     
         .image-placeholder {
             width: 100%;
